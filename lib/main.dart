@@ -9,6 +9,10 @@ void trial() {
   print(name);
 }
 
+void trial2 () {
+  List <String>? = ['blue', 'red'];
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   // This widget is the root of your application.
