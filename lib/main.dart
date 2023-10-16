@@ -9,8 +9,14 @@ void trial() {
   print(name);
 }
 
-void trial2 () {
-  List <String>? = ['blue', 'red'];
+void trial2() {
+  List<String>? colors = ['blue', 'red'];
+  colors = null;
+}
+
+void trial3() {
+  List<String?>? colors = ['blue', 'red', 'null'];
+  colors = null;
 }
 
 class MyApp extends StatelessWidget {
