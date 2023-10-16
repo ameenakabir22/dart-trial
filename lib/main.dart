@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
-const String? name = null;
+void trial() {
+  String? name = null;
+  print(name);
+  name = "amina";
+  print(name);
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
