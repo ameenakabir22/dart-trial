@@ -16,21 +16,10 @@ void trial2() {
 
 void trial4() {
   const String? firstName = "null";
-  const String? middleName = "Anna";
+  const String? middleName = "null";
   const String? lastName = "Kabir";
 
-  if (firstName != null) {
-    print("First name is the non-nullable value");
-  } else if (middleName != null) {
-    print("Middle name is the first non-nullable value");
-  } else if (lastName != null) {
-    print("Last name is the first non-nullable value");
-  }
-}
-
-void trial3() {
-  List<String?>? colors = ['blue', 'red', 'null'];
-  colors = null;
+  const firstNonNullValue = firstName ?? middleName ?? lastName;
 }
 
 class MyApp extends StatelessWidget {
