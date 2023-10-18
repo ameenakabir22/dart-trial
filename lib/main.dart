@@ -23,6 +23,12 @@ void trial4(String? firstName, String? middleName, String? lastName) {
   name ??= middleName;
 }
 
+void trial5(List<String>? fruits) {
+  if (fruits != null) {
+    final Length = fruits.length;
+  }
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   // This widget is the root of your application.
