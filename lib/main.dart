@@ -14,12 +14,13 @@ void trial2() {
   colors = null;
 }
 
-void trial4() {
+void trial4(String? firstName, String? middleName, String? lastName) {
   const String? firstName = "null";
   const String? middleName = "null";
   const String? lastName = "Kabir";
 
-  const firstNonNullValue = firstName ?? middleName ?? lastName;
+  String? name = firstName;
+  name ??= middleName;
 }
 
 class MyApp extends StatelessWidget {
