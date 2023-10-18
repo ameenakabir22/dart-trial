@@ -28,6 +28,12 @@ void trial5(List<String>? fruits) {
   fruits?.add('coconut');
 }
 
+enum PersonProperties { firstName, lastName, age }
+
+void trial6() {
+  print(PersonProperties.age);
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   // This widget is the root of your application.
