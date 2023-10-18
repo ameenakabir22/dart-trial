@@ -24,9 +24,8 @@ void trial4(String? firstName, String? middleName, String? lastName) {
 }
 
 void trial5(List<String>? fruits) {
-  if (fruits != null) {
-    final Length = fruits.length;
-  }
+  final length = fruits?.length ?? 0;
+  fruits?.add('coconut');
 }
 
 class MyApp extends StatelessWidget {
