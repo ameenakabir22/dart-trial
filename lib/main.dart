@@ -34,6 +34,24 @@ void trial6() {
   print(PersonProperties.age);
 }
 
+void trial7() {
+  String fruit = 'apple';
+
+  switch (fruit) {
+    case 'apple':
+      print('Selected fruit is Apple.');
+      break;
+    case 'banana':
+      print('Selected fruit is Banana.');
+      break;
+    case 'cherry':
+      print('Selected fruit is Cherry.');
+      break;
+    default:
+      print('Unknown fruit.');
+  }
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   // This widget is the root of your application.
