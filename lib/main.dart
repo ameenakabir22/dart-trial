@@ -3,17 +3,14 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class Person {
-  void run() {
-    print("running");
-  }
+  final String name;
 
-  void breathe() {
-    print("breathing");
-  }
+  Person(this.name);
 }
 
 void test() {
-  final amina = Person();
+  final amina = Person("amina kabir");
+  print(amina.name);
 }
 
 class MyApp extends StatelessWidget {
