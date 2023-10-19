@@ -2,54 +2,20 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
-void trial() {
-  String? name = null;
-  print(name);
-  name = "amina";
-  print(name);
-}
-
-void trial2() {
-  List<String>? colors = ['blue', 'red'];
-  colors = null;
-}
-
-void trial4(String? firstName, String? middleName, String? lastName) {
-  const String? firstName = "null";
-  const String? middleName = "null";
-  const String? lastName = "Kabir";
-
-  String? name = firstName;
-  name ??= middleName;
-}
-
-void trial5(List<String>? fruits) {
-  final length = fruits?.length ?? 0;
-  fruits?.add('coconut');
-}
-
-enum PersonProperties { firstName, lastName, age }
-
-void trial6() {
-  print(PersonProperties.age);
-}
-
-void trial7() {
-  String fruit = 'apple';
-
-  switch (fruit) {
-    case 'apple':
-      print('Selected fruit is Apple.');
-      break;
-    case 'banana':
-      print('Selected fruit is Banana.');
-      break;
-    case 'cherry':
-      print('Selected fruit is Cherry.');
-      break;
-    default:
-      print('Unknown fruit.');
+class Person {
+  void run() {
+    print("running");
   }
+
+  void breathe() {
+    print("breathing");
+  }
+}
+
+void test() {
+  final person = Person();
+  person.run();
+  person.breathe();
 }
 
 class MyApp extends StatelessWidget {
