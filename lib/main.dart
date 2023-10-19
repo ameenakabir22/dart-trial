@@ -13,9 +13,7 @@ class Person {
 }
 
 void test() {
-  final person = Person();
-  person.run();
-  person.breathe();
+  final amina = Person();
 }
 
 class MyApp extends StatelessWidget {
