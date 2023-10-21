@@ -2,20 +2,17 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
-abstract class LivingThing {
-  void breath() {
-    print("Living thing is breathing ");
-  }
-
-  void move() {
-    print("Living thing is moving ");
+class Cat {
+  final String name;
+  Cat(this.name);
+  factory Cat.Oreo() {
+    return Cat.Oreo();
   }
 }
 
-class Cat extends LivingThing {}
-
 void test() {
-  final Oreo = Cat();
+  final Oreo = Cat("Oreo");
+  print(Oreo.name);
 }
 
 class MyApp extends StatelessWidget {
