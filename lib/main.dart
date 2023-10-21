@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
-class LivingThing {
+abstract class LivingThing {
   void breath() {
     print("Living thing is breathing ");
   }
@@ -16,8 +16,6 @@ class Cat extends LivingThing {}
 
 void test() {
   final Oreo = Cat();
-  Oreo.move();
-  Oreo.breath();
 }
 
 class MyApp extends StatelessWidget {
