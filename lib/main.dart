@@ -2,19 +2,22 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
-class Person {
-  final String name;
+class LivingThing {
+  void breath() {
+    print("Living thing is breathing ");
+  }
 
-  Person(this.name);
-
-  void printName() {
-    print(name);
+  void move() {
+    print("Living thing is moving ");
   }
 }
 
+class Cat extends LivingThing {}
+
 void test() {
-  final amina = Person("amina kabir");
-  amina.printName();
+  final Oreo = Cat();
+  Oreo.move();
+  Oreo.breath();
 }
 
 class MyApp extends StatelessWidget {
