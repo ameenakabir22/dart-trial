@@ -2,17 +2,24 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
-class Cat {
+class Cat extends Object {
   final String name;
   Cat(this.name);
-  factory Cat.Oreo() {
-    return Cat.Oreo();
-  }
+  @override
+  bool operator ==(covariant Cat other) => other.name == name;
+
+  @override
+  int get hashCode => name.hashCode;
 }
 
 void test() {
-  final Oreo = Cat("Oreo");
-  print(Oreo.name);
+  final cat1 = Cat('foo');
+  final cat2 = Cat('foo');
+  if (cat1 == cat2) {
+    print('they are equal');
+  } else {
+    print('they are not equal');
+  }
 }
 
 class MyApp extends StatelessWidget {
